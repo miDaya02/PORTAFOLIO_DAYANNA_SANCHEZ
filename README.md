@@ -21,6 +21,10 @@ Este portafolio es un proyecto web diseñado para mostrar las habilidades, proye
 ## Características 🧮
 
 - **Página de Inicio**: Una introducción destacada con un diseño visual atractivo.
+
+![Inicio](**/css/inicio.png)
+
+  
 - **Sección de Proyectos**: Presenta proyectos destacados con imágenes y descripciones.
 - **Sobre Mí**: Información personal, habilidades técnicas y objetivos profesionales.
 - **Formulario de Contacto**: Permite a los visitantes enviar mensajes directamente desde la página.
