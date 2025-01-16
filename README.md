@@ -22,7 +22,7 @@ Este portafolio es un proyecto web diseñado para mostrar las habilidades, proye
 
 - **Página de Inicio**: Una introducción destacada con un diseño visual atractivo.
 
-![Inicio](**/css/inicio.png)
+![Inicio](../img/inicio.png)
 
   
 - **Sección de Proyectos**: Presenta proyectos destacados con imágenes y descripciones.
