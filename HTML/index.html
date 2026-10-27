@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -11,17 +11,19 @@
 </head>
 
 <body>
+    <div class="scroll-progress"></div>
     <header>
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="hamburguer-menu">&#9776;</label>
+        <label for="menu-toggle" class="hamburguer-menu" aria-label="Abrir menú"><span></span><span></span><span></span></label>
         <div class="menu-overlay">
-            <label for="menu-toggle" class="close-menu">&times;</label>
             <nav class="navegador">
-                <a href="../vistas/films.html" class="logo">DAYANNA</a>
+                <span class="logo">DAYANNA</span>
                 <ul>
                     <li><a href="#inicio">INICIO</a></li>
                     <li><a href="#sobre_mi">SOBRE MI</a></li>
+                    <li><a href="#trayectoria">MI CAMINO</a></li>
                     <li><a href="#skills">HABILIDADES</a></li>
+                    <li><a href="#proyectos">PROYECTOS</a></li>
                     <li><a href="#contactame">CONTÁCTAME</a></li>
                 </ul>
             </nav>
@@ -30,37 +32,28 @@
     <main>
         <!-- Sección Inicio -->
         <section class="inicio" id="inicio">
-            <img src="../img/dayanna.png" alt="Foto de Dayanna">
-            <div class="descripcion">
+            <div class="foto-wrap reveal izq">
+                <img src="../img/dayanna.png" alt="Foto de Dayanna">
+            </div>
+            <div class="descripcion reveal der">
                 <h1 class="titulo">
                     <i>Hola, soy Dayanna <br> </i>
-                    <span><i class="Id">DESARROLLADORA FULL
-                            STACK</i></span><br>
+                    <span><i class="Id" id="typing" data-text="DESARROLLADORA FULL STACK">DESARROLLADORA FULL STACK</i></span><br>
                 </h1>
                 <p>
                     Soy apasionada y motivada, con un fuerte deseo de
                     aprender y crecer. Me caracterizo por ser proactiva,
                     innovadora y colaborativa.
                 </p>
-                <div class="social-icons">
-                    <a href="https://discord.com/channels/1101581994355347526/1238563982218891274" target="_blank" class="icon icon-discord" title="Discord">
-                        <i class="fab fa-discord"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/michelle-dayanna-sanchez-angarita-6baa3a337/" target="_blank" class="icon icon-linkedin" title="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/miDaya02" target="_blank" class="icon icon-github" title="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
+                
             </div>
         </section>
 
         <section class="sobre_mi" id="sobre_mi">
-            <h1 class="titulo-sobre-mi"> SOBRE MI</h1>
+            <h1 class="titulo-sobre-mi reveal">SOBRE MI</h1>
 
             <div class="descripcion">
-                <p>
+                <p class="reveal izq">
                     Me caracterizo por ser proactiva, innovadora y
                     colaborativa. Estoy comprometida con mi desarrollo
                     personal y profesional, y busco oportunidades para
@@ -72,93 +65,174 @@
                     sobre temas que me interesan y explorar nuevas
                     tecnologías y herramientas.
                 </p>
-                <div class="pared">
+                <div class="pared reveal der">
                     <div class="pared-seccion resiliencia">Resiliencia</div>
                     <div class="pared-seccion pasion">Pasión</div>
                     <div class="pared-seccion creatividad">Creatividad</div>
                     <div class="pared-seccion colaboracion">Colaboración</div>
                     <div class="pared-seccion dedicacion">Dedicación</div>
                 </div>
-                <footer class="frase">
+                <footer class="frase reveal">
                     <p><i>Desarrollando soluciones, superando
-                            expectativas<span class="emoji">🌟🚀</span>
+                            expectativas <span class="emoji">🌟🚀</span>
                         </i></p>
                 </footer>
+            </div>
         </section>
 
-        <section class="skills" id="skills">
-            <h1 class="titulo-sobre-mi">HABILIDADES</h1>
-            <div class="skills-logos">
-                <div class="skill">
-                    <div class="skill-logo">
-                        <img src="../img/html.png" alt="HTML">
+        <section class="trayectoria" id="trayectoria">
+            <h1 class="titulo-sobre-mi reveal">MI CAMINO</h1>
+            <p class="trayectoria-sub reveal">De mis primeras líneas de HTML a construir interfaces en equipos reales 💜</p>
+            <div class="timeline">
+                <div class="hito izq reveal">
+                    <div class="hito-punto">💻</div>
+                    <div class="hito-card">
+                        <span class="hito-fecha">Abr 2024 – Feb 2025</span>
+                        <h3>Técnica Laboral en Desarrollo de Software</h3>
+                        <p class="hito-lugar">Campuslands · Floridablanca</p>
+                        <p class="hito-desc">Mi primer gran paso: aprendí a maquetar interfaces con HTML, CSS y JavaScript, a consumir APIs REST y a trabajar con Git. Como Junior Full Stack Developer construí aplicaciones web completas, conectando el frontend con APIs en Spring Boot y bases de datos MySQL y PostgreSQL.</p>
+                        <div class="hito-tags"><span class="hito-tag">HTML</span><span class="hito-tag">CSS</span><span class="hito-tag">JavaScript</span><span class="hito-tag">Git</span><span class="hito-tag">Spring Boot</span></div>
                     </div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 95%;"></div>
-                    </div>
-                    <p class="skill-percentage">HTML - 95%</p>
                 </div>
-                <div class="skill">
-                    <div class="skill-logo">
-                        <img src="../img/css.png" alt="CSS">
+                <div class="hito der reveal">
+                    <div class="hito-punto">🎨</div>
+                    <div class="hito-card">
+                        <span class="hito-fecha">Mar – May 2025</span>
+                        <h3>Junior Software Developer</h3>
+                        <p class="hito-lugar">Campuslands</p>
+                        <p class="hito-desc">Me enfoqué de lleno en el frontend: convertí prototipos de Figma en componentes reutilizables con React y Tailwind CSS, integré APIs REST y trabajé en sprints ágiles con Jira y Git.</p>
+                        <div class="hito-tags"><span class="hito-tag">React</span><span class="hito-tag">Tailwind CSS</span><span class="hito-tag">Figma</span><span class="hito-tag">Jira</span></div>
                     </div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 92%;"></div>
-                    </div>
-                    <p class="skill-percentage">CSS - 92%</p>
                 </div>
-                <div class="skill">
-                    <div class="skill-logo">
-                        <img src="../img/javascript.png" alt="JavaScript">
+                <div class="hito izq reveal">
+                    <div class="hito-punto">🚀</div>
+                    <div class="hito-card">
+                        <span class="hito-fecha">Jul 2025 – Ene 2026</span>
+                        <h3>Trainee Web UI</h3>
+                        <p class="hito-lugar">Globant</p>
+                        <p class="hito-desc">Desarrollé componentes en React y TypeScript para la interfaz de un chatbot con IA, optimicé el rendimiento de las aplicaciones y corregí bugs en producción. También construí soluciones para Microsoft Teams y desplegué en Azure y Oracle Cloud bajo Scrum.</p>
+                        <div class="hito-tags"><span class="hito-tag">React</span><span class="hito-tag">TypeScript</span><span class="hito-tag">Azure</span><span class="hito-tag">Oracle Cloud</span><span class="hito-tag">Scrum</span></div>
                     </div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 90%;"></div>
-                    </div>
-                    <p class="skill-percentage">JavaScript - 90%</p>
                 </div>
-                <div class="skill">
-                    <div class="skill-logo">
-                        <img src="../img/python.png" alt="Python">
+                <div class="hito der actual reveal">
+                    <div class="hito-punto">🌟</div>
+                    <div class="hito-card">
+                        <span class="hito-fecha">2025 – En curso</span>
+                        <h3>Ingeniería de Sistemas</h3>
+                        <p class="hito-lugar">UNAD · Universidad Nacional Abierta y a Distancia</p>
+                        <p class="hito-desc">Desde 2025 me estoy formando como ingeniera mientras sigo perfeccionando mi lado frontend: interfaces bonitas, claras y bien pensadas para las personas que las usan.</p>
                     </div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 84%;"></div>
-                    </div>
-                    <p class="skill-percentage">Python - 84%</p>
-                </div>
-                <div class="skill">
-                    <div class="skill-logo">
-                        <img src="../img/mysql.png" alt="MySQL">
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 100%;"></div>
-                    </div>
-                    <p class="skill-percentage">MySQL - 100%</p>
-                </div>
-                <div class="skill">
-                    <div class="skill-logo">
-                        <img src="../img/java.png" alt="Java">
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 93%;"></div>
-                    </div>
-                    <p class="skill-percentage">Java - 93%</p>
-                </div>
-                <div class="skill">
-                    <div class="skill-logo">
-                        <img src="../img/springboot.png" alt="Spring Boot">
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 90%;"></div>
-                    </div>
-                    <p class="skill-percentage">Spring Boot - 90%</p>
                 </div>
             </div>
         </section>
 
-        <section class="proyectos">
-            <h1 class="titulo-proyectos">PROYECTOS</h1>
+        <section class="skills" id="skills">
+            <h1 class="titulo-sobre-mi reveal">HABILIDADES</h1>
+            <p class="skills-sub reveal">Tecnologías con las que construyo de punta a punta ✨</p>
+            <div class="skills-tabs reveal">
+                <button class="skills-tab activo" data-filtro="todas">Todas</button>
+                <button class="skills-tab" data-filtro="frontend">Frontend</button>
+                <button class="skills-tab" data-filtro="backend">Backend &amp; Datos</button>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card reveal izq" data-categoria="frontend">
+                    <h2 class="skill-card-titulo">🎨 FRONTEND</h2>
+                    <p class="skill-card-desc">Interfaces bonitas, responsivas y dinámicas</p>
+                    <div class="skill-row reveal">
+                        <div class="skill-icon"><img src="../img/html.png" alt="HTML"></div>
+                        <div class="skill-info">
+                            <div class="skill-top"><span class="skill-name">HTML</span><span class="skill-pct">95%</span></div>
+                            <div class="skill-bar"><div class="progress" data-width="95"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-row reveal">
+                        <div class="skill-icon"><img src="../img/css.png" alt="CSS"></div>
+                        <div class="skill-info">
+                            <div class="skill-top"><span class="skill-name">CSS</span><span class="skill-pct">92%</span></div>
+                            <div class="skill-bar"><div class="progress" data-width="92"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-row reveal">
+                        <div class="skill-icon"><img src="../img/javascript.png" alt="JavaScript"></div>
+                        <div class="skill-info">
+                            <div class="skill-top"><span class="skill-name">JavaScript</span><span class="skill-pct">90%</span></div>
+                            <div class="skill-bar"><div class="progress" data-width="90"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-row reveal">
+                        <div class="skill-icon"><img src="../img/typescript.svg" alt="TypeScript"></div>
+                        <div class="skill-info">
+                            <div class="skill-top"><span class="skill-name">TypeScript</span><span class="skill-pct">80%</span></div>
+                            <div class="skill-bar"><div class="progress" data-width="80"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-row reveal">
+                        <div class="skill-icon"><img src="../img/react.svg" alt="React"></div>
+                        <div class="skill-info">
+                            <div class="skill-top"><span class="skill-name">React</span><span class="skill-pct">88%</span></div>
+                            <div class="skill-bar"><div class="progress" data-width="88"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card reveal der" data-categoria="backend">
+                    <h2 class="skill-card-titulo">⚙️ BACKEND &amp; DATOS</h2>
+                    <p class="skill-card-desc">APIs, lógica de servidor y bases de datos</p>
+                    <div class="skill-row reveal">
+                        <div class="skill-icon"><img src="../img/java.png" alt="Java"></div>
+                        <div class="skill-info">
+                            <div class="skill-top"><span class="skill-name">Java</span><span class="skill-pct">93%</span></div>
+                            <div class="skill-bar"><div class="progress" data-width="93"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-row reveal">
+                        <div class="skill-icon"><img src="../img/springboot.png" alt="Spring Boot"></div>
+                        <div class="skill-info">
+                            <div class="skill-top"><span class="skill-name">Spring Boot</span><span class="skill-pct">90%</span></div>
+                            <div class="skill-bar"><div class="progress" data-width="90"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-row reveal">
+                        <div class="skill-icon"><img src="../img/python.png" alt="Python"></div>
+                        <div class="skill-info">
+                            <div class="skill-top"><span class="skill-name">Python</span><span class="skill-pct">84%</span></div>
+                            <div class="skill-bar"><div class="progress" data-width="84"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-row reveal">
+                        <div class="skill-icon"><img src="../img/nodejs.svg" alt="Node.js"></div>
+                        <div class="skill-info">
+                            <div class="skill-top"><span class="skill-name">Node.js</span><span class="skill-pct">75%</span></div>
+                            <div class="skill-bar"><div class="progress" data-width="75"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-row reveal">
+                        <div class="skill-icon"><img src="../img/mysql.png" alt="MySQL"></div>
+                        <div class="skill-info">
+                            <div class="skill-top"><span class="skill-name">MySQL</span><span class="skill-pct">100%</span></div>
+                            <div class="skill-bar"><div class="progress" data-width="100"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-extra reveal">
+                <p>También trabajo con</p>
+                <div class="chips">
+                    <span class="chip">Git &amp; GitHub</span>
+                    <span class="chip">Figma</span>
+                    <span class="chip">Tailwind CSS</span>
+                    <span class="chip">APIs REST</span>
+                    <span class="chip">PostgreSQL</span>
+                    <span class="chip">Azure</span>
+                    <span class="chip">Oracle Cloud</span>
+                    <span class="chip">Scrum / Kanban</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="proyectos" id="proyectos">
+            <h1 class="titulo-proyectos reveal">PROYECTOS</h1>
             <div class="proyectos-logos">
-                <div class="proyecto">
+                <div class="proyecto reveal">
                     <a href="https://github.com/laura2ndrea/Star-Wars" target="_blank" class="proyecto-link">
                         <div class="proyecto-logo">
                             <img src="../img/starwars.webp" alt="STAR-WARS">
@@ -170,9 +244,10 @@
                                 </p>
                             </div>
                         </div>
+                    <span class="proyecto-nombre">STAR WARS</span>
                     </a>
                 </div>
-                <div class="proyecto">
+                <div class="proyecto reveal">
                     <a href="https://github.com/laura2ndrea/FanPage-Sailor-Moon" target="_blank" class="proyecto-link">
                         <div class="proyecto-logo">
                             <img src="../img/sailor-moon.png" alt="Sailor Moon">
@@ -183,9 +258,10 @@
                                 </p>
                             </div>
                         </div>
+                    <span class="proyecto-nombre">SAILOR MOON FAN PAGE</span>
                     </a>
                 </div>
-                <div class="proyecto">
+                <div class="proyecto reveal">
                     <a href="https://github.com/miDaya02/PROYECTO_MySQL2_SANCHEZ_MICHELLE_RODRIGUEZ_LAURA"
                         target="_blank" class="proyecto-link">
                         <div class="proyecto-logo">
@@ -197,12 +273,13 @@
                                     alquileres y operaciones financieras.</p>
                             </div>
                         </div>
+                    <span class="proyecto-nombre">TIENDA DE DISFRACES</span>
                     </a>
                 </div>
-                <div class="proyecto">
+                <div class="proyecto reveal">
                     <a href="https://github.com/miDaya02/Proyecto_JavaScript_Sanchez_Michelle" target="_blank"
                         class="proyecto-link">
-                        <div class="proyecto-logo">
+                        <div class="proyecto-logo logo-contain oscuro">
                             <img src="../img/parqueadero.png" alt="Parqueadero">
                             <div class="proyecto-overlay">
                                 <h3>PARQUEADERO</h3>
@@ -211,47 +288,64 @@
                                     facturación automática.</p>
                             </div>
                         </div>
+                    <span class="proyecto-nombre">PARQUEADERO</span>
                     </a>
                 </div>
-                <div class="proyecto">
-                    <a href="https://github.com/miDaya02/EXAMEN_SANCHEZ_MICHELLE/tree/main" target="_blank"
+                <div class="proyecto reveal">
+                    <a href="https://github.com/Stefanyyy15/MyLittlePetShop_Michelle_Yuli" target="_blank"
                         class="proyecto-link">
-                        <div class="proyecto-logo">
-                            <img src="../img/image.png" alt="Parqueadero">
+                        <div class="proyecto-logo logo-contain morado">
+                            <img src="../img/lps-logo.png" alt="My Little Pet Shop Vet">
                             <div class="proyecto-overlay">
-                                <h3>PAGINA DE CHISMES</h3>
-                                <p>El proyecto Chismecito con Daya consiste en una aplicacion web en la que los usuarios
-                                    pueden guardar sus chismes con base a una descripcion, su fecha, categoria y estado.
-                                </p>
+                                <h3>MY LITTLE PET SHOP VET</h3>
+                                <p>Sistema en Java y MySQL para gestionar una clínica veterinaria: mascotas y
+                                    dueños, historial médico, inventario de medicamentos y vacunas, procedimientos,
+                                    proveedores y facturación.</p>
                             </div>
                         </div>
+                    <span class="proyecto-nombre">MY LITTLE PET SHOP VET</span>
                     </a>
                 </div>
             </div>
         </section>
         <section class="contactame" id="contactame">
-            <h1 class="titulo-contactame">CONTÁCTAME</h1>
-            <p class="contactame-descripcion">
+            <h1 class="titulo-contactame reveal">CONTÁCTAME</h1>
+            <p class="contactame-descripcion reveal">
                 Si tienes alguna pregunta, quieres colaborar o simplemente deseas decir hola, no dudes en escribirme. ¡Estoy disponible para nuevos proyectos y oportunidades emocionantes!
             </p>
-            <form class="formulario-contacto">
-                <div class="form-group">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
-                </div>
-                <div class="form-group">
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
-                </div>
-                <button type="submit" class="boton-enviar">Enviar</button>
-            </form>       
+            <div class="contacto-redes">
+                <a href="https://wa.me/573224309399" target="_blank" rel="noopener" class="contacto-item reveal zoom" title="WhatsApp">
+                    <span class="contacto-icono whatsapp"><i class="fab fa-whatsapp"></i></span>
+                    <span class="contacto-nombre">WhatsApp</span>
+                    <span class="contacto-dato">322 430 9399</span>
+                </a>
+                <a href="mailto:micdaya02@gmail.com" class="contacto-item reveal zoom" title="Correo">
+                    <span class="contacto-icono correo"><i class="fas fa-envelope"></i></span>
+                    <span class="contacto-nombre">Correo</span>
+                    <span class="contacto-dato">micdaya02@gmail.com</span>
+                </a>
+                <a href="https://www.linkedin.com/in/michelle-dayanna-sanchez-angarita-6baa3a337/" target="_blank" rel="noopener" class="contacto-item reveal zoom" title="LinkedIn">
+                    <span class="contacto-icono linkedin"><i class="fab fa-linkedin"></i></span>
+                    <span class="contacto-nombre">LinkedIn</span>
+                    <span class="contacto-dato">Michelle Dayanna</span>
+                </a>
+                <a href="https://github.com/miDaya02" target="_blank" rel="noopener" class="contacto-item reveal zoom" title="GitHub">
+                    <span class="contacto-icono github"><i class="fab fa-github"></i></span>
+                    <span class="contacto-nombre">GitHub</span>
+                    <span class="contacto-dato">miDaya02</span>
+                </a>
+                <a href="https://discord.com/channels/1101581994355347526/1238563982218891274" target="_blank" rel="noopener" class="contacto-item reveal zoom" title="Discord">
+                    <span class="contacto-icono discord"><i class="fab fa-discord"></i></span>
+                    <span class="contacto-nombre">Discord</span>
+                    <span class="contacto-dato">Escríbeme</span>
+                </a>
+            </div>
+            <footer class="pie">© 2026 Dayanna Sánchez · Hecho con 💜</footer>
+        </section>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"
         crossorigin="anonymous"></script>
+    <script src="../JS/main.js"></script>
 </body>
 
 </html>
